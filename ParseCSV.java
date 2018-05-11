@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.List;
 
-public class CSVUtils {
+public class ParseCSV {
 
 	//comma is the default separator
     private static final char DEFAULT_SEPARATOR = ',';
