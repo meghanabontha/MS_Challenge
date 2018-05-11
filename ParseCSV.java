@@ -16,7 +16,7 @@ public class ParseCSV {
     }
 
     public static void writeLine(Writer wr, List<String> values, char separators) throws IOException 
-	{
+    {
         writeLine(wr, values, separators, ' ');
     }
 
@@ -39,22 +39,22 @@ public class ParseCSV {
         //the customQuote is empty by default
 
         if (separators == ' ') 
-		{
+	{
             separators = DEFAULT_SEPARATOR;
         }
 
         StringBuilder sb = new StringBuilder();
         for (String value : values) 
-		{
+	{
             if (!first) 
-			{
+	    {
                 sb.append(separators);
             }
             if (customQuote == ' ') 
-			{
+	    {
                 sb.append(followCVSformat(value));
             } else 
-			{
+	    {
                 sb.append(customQuote).append(followCVSformat(value)).append(customQuote);
             }
 
@@ -66,7 +66,7 @@ public class ParseCSV {
     
 	//add the value to the string
     public static void writeLine( Writer wr, String value ) throws IOException 
-	{
+    {
     	StringBuilder sb = new StringBuilder();
     	sb.append(value);
         sb.append("\n");
