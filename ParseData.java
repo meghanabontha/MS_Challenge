@@ -83,7 +83,7 @@ public class ParseData {
             	if( country.length != 10 ){            		
             		System.out.println( "Less count="+ line );
             		failurecount++;
-            		CSVUtils.writeLine(writer, line );
+            		ParseCSV.writeLine(writer, line );
             		continue;
             	}            	
                 
